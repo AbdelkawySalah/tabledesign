@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Colors in Css </title>
+   <style>
+       table{
+           border-collapse: collapse;
+           width: 100%
+       }
+       th{
+           height: 30px;
+           text-align: left;
+           vertical-align: top;
+           background-color: azure;
+           color: red;
+       }
+       th,td{
+           padding: 10px;
+          /* border: 1px solid red; */
+           border-bottom: 1px solid blue;
+           border-top: 1px solid red;
+       }
+       
+      
+       /* لتثبيت اللون علي الصفف الزوجية*/
+       tr:nth-child(even){
+                      background-color:cornsilk;
+
+       }
+            /* لتثبيت اللون علي الصفف الفردية*/
+
+       tr:nth-child(odd){
+                                 background-color:chartreuse;
+
+       }
+              /* عشان يحس بيها لازم تكون هيا اخر حاجة*/
+
+       tr:hover{
+           background-color:crimson;
+       }
+   </style>
+
+</head>
+<body>
+
+    <div style="overflow-x:auto;"> 
+
+
+    <table>
+         <tr>
+           <th>
+               number
+           </th>
+            <th>
+               name
+           </th>
+              <th>
+               salary
+           </th>
+         </tr>
+        <tr>
+           <td>
+               1
+           </td>
+            <td>
+               ahmed
+           </td>
+              <td>
+               2000
+           </td>
+         </tr>
+      <tr>
+           <td>
+               2
+           </td>
+            <td>
+               waledd
+           </td>
+              <td>
+               3000
+           </td>
+         </tr>
+      <tr>
+           <td>
+               3
+           </td>
+            <td>
+               yaser
+           </td>
+              <td>
+               4000
+           </td>
+         </tr>
+      <tr>
+           <td>
+               4
+           </td>
+            <td>
+               adel
+           </td>
+              <td>
+               6999
+           </td>
+         </tr>
+    </table>
+</div>
+</body>
+
+</html>
